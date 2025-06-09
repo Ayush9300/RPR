@@ -1,0 +1,149 @@
+/* Base Styling */
+#login {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 100px 20px 40px;
+  box-sizing: border-box;
+}
+
+.loginform {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 100px;
+}
+
+#logintitle {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Input Fields */
+.login-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.login-list label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.login-list input {
+  width: 100%;
+  padding: 5px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #000;
+  border: 1px solid #474646;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Submit Button */
+#loginbtn {
+  padding: 12px 30px;
+  background-color: rgb(247, 8, 8);
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 30px auto 0;
+  transition: background 0.3s ease;
+}
+
+#loginbtn:hover {
+  background-color: #b30000;
+}
+
+#loginbtn svg {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+/* Alert Box */
+.custom-alert {
+  margin-top: 30px;
+  padding: 15px 25px;
+  background-color: #e0ffe0;
+  color: #0a0;
+  font-weight: 500;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.alert-ok-btn {
+  margin-top: 10px;
+  padding: 6px 16px;
+  background-color: #0a0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.alert-ok-btn:hover {
+  background-color: #077807;
+}
+
+/* 🔄 Responsive Queries */
+@media (max-width: 768px) {
+  #logintitle {
+    font-size: 1.5rem;
+  }
+
+  .loginform {
+    max-width: 95%;
+  }
+
+  #loginbtn {
+    font-size: 0.95rem;
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  #logintitle {
+    font-size: 1.4rem;
+  }
+
+  .login-list label {
+    font-size: 0.95rem;
+  }
+
+  .login-list input {
+    font-size: 0.9rem;
+  }
+
+  #loginbtn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}

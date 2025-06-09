@@ -1,0 +1,138 @@
+/* Base styling */
+#contact {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 100px 20px 20px;
+  box-sizing: border-box;
+  
+}
+
+#contact form {
+  margin-top: 100px;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contacttitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.list label {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.list input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #000;
+  border: 1px solid #474646;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  outline: none;
+  resize: vertical;
+}
+
+#contactbtn {
+  padding: 10px 30px;
+  background-color: rgb(247, 8, 8);
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 30px auto 0;
+  transition: background 0.3s ease;
+}
+
+#contactbtn:hover {
+  background-color: #b30000;
+}
+
+#listbtn svg {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+/* Footer or Additional Section Styling */
+#contact1, #services, #Quick, #logo {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: white;
+}
+
+.box span {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: white;
+}
+
+#logo button {
+  padding: 10px 40px;
+}
+
+/* 🔄 Responsive Queries */
+@media (max-width: 768px) {
+  #contacttitle {
+    font-size: 2rem;
+  }
+
+  #contact form {
+    max-width: 95%;
+  }
+
+  #contactbtn {
+    font-size: 0.95rem;
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  #contacttitle {
+    font-size: 1.7rem;
+  }
+
+  .list label {
+    font-size: 1rem;
+  }
+
+  .list input,
+  textarea {
+    font-size: 0.95rem;
+  }
+
+  #contactbtn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}

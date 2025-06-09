@@ -1,0 +1,86 @@
+/* Base styling */
+#signup {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 100px 20px 40px;
+  box-sizing: border-box;
+}
+
+#signup form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 100px;
+}
+
+#signuptitle {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Form input group */
+ #signup.sign-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+ #signup .sign-list label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+}
+
+ #signup .sign-list input {
+  width: 100%;
+  padding: 5px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #000;
+  border: 1px solid #474646;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Submit Button */
+#signupbtn {
+  padding: 12px 30px;
+  background-color: rgb(247, 8, 8);
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 30px auto 0;
+  transition: background 0.3s ease;
+}
+
+#signupbtn:hover {
+  background-color: #b30000;
+}
+
+#signupbtn svg {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+/* 🔄 Responsive Queries *

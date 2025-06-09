@@ -1,0 +1,100 @@
+#footer {
+  width: 100%;
+  background-color: rgb(38, 38, 38);
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Top section of the footer */
+.footertop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Each section (contact1, services, etc.) */
+.box {
+  flex: 1 1 200px;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+#contact1, #services, #logo, #Quick {
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.box span {
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+}
+
+.box button {
+  padding: 8px 25px;
+  background-color: rgb(247, 8, 8);
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Bottom footer section */
+.footerbuttom {
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(248, 243, 243, 0.991);
+}
+
+
+/* Responsive Footer Styling - No HTML Change */
+@media (max-width: 768px) {
+  .footertop {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .box {
+    width: 48%;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  #contact1,
+  #services,
+  #Quick,
+  #logo {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .box span {
+    font-size: 13px;
+  }
+
+  .box button {
+    font-size: 13px;
+    padding: 6px 20px;
+  }
+
+  .footerbuttom span {
+    font-size: 12px;
+    text-align: center;
+  }
+}
