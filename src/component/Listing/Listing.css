@@ -7,7 +7,7 @@
   justify-content: center;
   flex-direction: column;
   background-color: #fff;
-  padding: 80px 15px 30px;
+  padding: 160px 15px 30px; /* 🔧 increased top padding to avoid navbar overlap */
   box-sizing: border-box;
 }
 
@@ -17,7 +17,6 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 80px;
 }
 
 /* Title */
@@ -30,7 +29,7 @@
 }
 
 /* Input Groups */
- #listing.list,
+#listing.list,
 .sign-list {
   width: 100%;
   display: flex;
@@ -39,20 +38,24 @@
   gap: 4px;
 }
 
- #listing.list label,
+#listing.list label,
 .sign-list label {
   font-size: 0.95rem;
   font-weight: 500;
   color: #000;
-
 }
-#listing .list input{
-  padding: 4px;
- }
 
+#listing .list input {
+  padding: 8px;
+  font-size: 0.9rem;
+  border: 1px solid #999;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  outline: none;
+  box-sizing: border-box;
+}
 
-.sign-list input
- {
+.sign-list input {
   width: 100%;
   padding: 8px;
   font-size: 0.88rem;
@@ -66,12 +69,18 @@
   resize: vertical;
 }
 
-#listing .list textarea{
-  padding: 2px;
+#listing .list textarea {
+  padding: 6px;
+  font-size: 0.9rem;
+  border: 1px solid #999;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  outline: none;
+  resize: vertical;
 }
 
 /* File input spacing fix */
- #listing.sign-list input[type="file"] {
+#listing.sign-list input[type="file"] {
   padding: 5px;
 }
 
@@ -110,7 +119,7 @@
   }
 
   #listing form {
-    max-width: 90%;
+    max-width: 95%;
   }
 
   #listbtn {
